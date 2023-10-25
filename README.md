@@ -1,0 +1,2 @@
+# DeviceForEA
+ManagedProject
