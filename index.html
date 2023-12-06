@@ -8,26 +8,38 @@
     <body class="container">
         <header class="main-header">
             <h1 class="main-header-logo"><a href="index.html">DEVICE</a></h1>
-            <label class="main-header-search">поиск по сайту</label>
+            <form action="#" method="get" class="main-search">
+                <label for="main-search" ></label>
+                <input type="text" id="main-search" name="main-search" placeholder="поиск по сайту">
+            </form>
             <ul class="user-navigation">
                 <li class="user-navigation-sign-in"><button>Войти</button></li>
             </ul>
             <a href="#">Сравнить</a>
             <a href="#">Корзина</a>
-            <nav class="navigation">
-                <ul class="navigation-list">
-                    <li><a href="#">Каталог товаров</a></li>
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="#">Гарантия</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
+            <nav class="navigation">        
+                <a href="#" class="navigation-catalog_button">Каталог товаров</a>               
+                <a href="#">Доставка</a>
+                <a href="#">Гарантия</a>
+                <a href="#">Контакты</a>                
             </nav>
+            <section class="navigation-catalog">
+                <h2 class="visually-hidden">Разделы каталога товаров</h2>
+                <ul class="navigation-catalog-list">
+                    <li><a href="#">Виртуальная реальность</a></li>
+                    <li><a href="#">Монопады для селфи</a></li>
+                    <li><a href="#">Экшн камеры</a></li>
+                    <li><a href="#">Фитнесс браслеты</a></li>
+                    <li><a href="#">Умные часы</a></li>
+                    <li><a href="#">Квадрокоптеры</a></li>                       
+                </ul>
+            </section>
         </header>
         <main>
-            <section class="promotion">
-                <h2 class="visually-hidden">Реклама товара</h2>
+            <section class="promotion hidden">
+                <h2 class="visually-hidden">Реклама 1 товара</h2>
                 <p class="product-picture">
-                    <img src="#" alt="Изображение товара">
+                    <img src="#" alt="Селфи-палка">
                 </p>
                 <b>Делай селфи, как Бен Стиллер!</b>
                 <p>
@@ -50,6 +62,59 @@
                         <td>Длина палки</td>
                         <td>Вес палки</td>
                         <td>Материал</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="promotion hidden">
+                <h2 class="visually-hidden">Реклама 2 товара</h2>
+                <p class="product-picture">
+                    <img src="#" alt="Фитнесс-браслет">
+                </p>
+                <b>Худеем правильно!</b>
+                <p>
+                    Мотивирующие фитнес-браслеты помогут найти в себе силы 
+                    не пропускать занятия и соблюдать диету.
+                </p>
+                <a class="button-line" href="#">Подробнее</a>
+                <ul class="slider-buttons">
+                    <li class="slider-buttons-empty"></li>
+                    <li class="slider-buttons-filled"></li>
+                    <li class="slider-buttons-empty"></li>
+                </ul>
+                <table class="specifications-table">                    
+                    <tr class="specifications-table-values">
+                        <td>48 часов</td>
+                        
+                    </tr>
+                    <tr class="specifications-table-parameters">
+                        <td>Без подзарядки</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="promotion">
+                <h2 class="visually-hidden">Реклама 3 товара</h2>
+                <p class="product-picture">
+                    <img src="#" alt="Квадрокоптер">
+                </p>
+                <b>Порхает как бабочка, жалит как пчела!</b>
+                <p>
+                    Этот обычный, на первый взгляд, квадрокоптер оснащен 
+                    мощным лазером, замаскированным под стандартную камеру.
+                </p>
+                <a class="button-line" href="#">Подробнее</a>
+                <ul class="slider-buttons">
+                    <li class="slider-buttons-filled"></li>
+                    <li class="slider-buttons-empty"></li>
+                    <li class="slider-buttons-empty"></li>
+                </ul>
+                <table class="specifications-table">                    
+                    <tr class="specifications-table-values">
+                        <td>800 м</td>       
+                        <td>50 м</td>                 
+                    </tr>
+                    <tr class="specifications-table-parameters">
+                        <td>Дальность полета</td>
+                        <td>Радиус поражения</td>
                     </tr>
                 </table>
             </section>
@@ -80,15 +145,17 @@
                         Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 </div>
             </section>
+            
             <section class="sponsors">
                 <h2 class="visually-hidden">Спонсорские ссылки</h2>
                 <ul class="sponsors-list">
-                    <li><a href="#"><img scr="#" alt="DJI"><img></a></li>
-                    <li><a href="#"><img scr="#" alt="SPGadjets"><img></a></li>
-                    <li><a href="#"><img scr="#" alt="GoPro"><img></a></li>
-                    <li><a href="#"><img scr="#" alt="VIVE"><img></a></li>
+                    <li><a href="#"><img src="#" alt="DJI"></a></li>
+                    <li><a href="#"><img src="#" alt="SPGadjets"></a></li>
+                    <li><a href="#"><img src="#" alt="GoPro"></a></li>
+                    <li><a href="#"><img src="#" alt="VIVE"></a></li>
                 </ul>
             </section>
+
             <section class="about-us">
                 <h2>О нас</h2>
                 <p>Огромный выбор гаджетов не оставит 
@@ -119,31 +186,47 @@
             </ul>
             <a href="#">Сравнить</a>
             <a href="#">Корзина</a>
-            <p class="footer-address">г. Москва, ул. Строителей,15</p>
+            <address class="footer-address">г. Москва, ул. Строителей,15</address>
             <ul class="footer-navigation-list">
                 <li><a href="#">Доставка</a></li>
                 <li><a href="#">Гарантия</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
-            <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
+            <address class="footer-phone">Тел.: +7 (495) 495-95-95</address>
             <div class="footer-social-container">
-                <ul class="footer-social">
-                    <li class="footer-social-facebook"><a href="Facebook.com">Facebook</a></li>
-                    <li class="footer-social-facebook"><a href="Instagram.com">Instagram</a></li>
-                    <li class="footer-social-facebook"><a href="Twitter.com">Twitter</a></li>
+                <ul class="footer-social" style="background-color: rgb(125, 125, 125);">
+                    <li><a href="Facebook.com"><img src="img/facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="Instagram.com"><img src="img/instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="Twitter.com"><img src="img/Twitter.svg" alt="Twitter"></a></li>
                 </ul>
+                <a href="vk.com"><img src="img/logo-html-acad.svg"></a>
             </div>
         </footer>
+
         <section class="modal modal-write-us">
             <h2>Форма обратной связи</h2>
-            <!-- Форма обратной связи -->
-            <span class="modal-close-button">X</span>
-            <button class="button-line">Отправить</button>
+            <form action="https://echo.htmlacademy.ru" method="post" class="write-us">
+                <label>
+                    <b>Ваше имя:</b>
+                    <input type="text" name="user-name" placeholder="Имя Фамилия">
+                </label>
+                <label>
+                    <b>Ваш e-mail:</b>
+                    <input type="email" name="user-email" placeholder="email@example.com">
+                </label>
+                <label>
+                    <b>Текст письма:</b>
+                    <textarea name="comment" placeholder="В свободной форме"></textarea>                    
+                </label>
+                <button type="submit" class="button-line">Отправить</button>
+            </form>
+            <span class="modal-close-button">X</span>            
         </section>
+
         <section class="modal modal-map">
             <h2>Модальное окно с картой</h2>
-            <img src="files/map.jpg" alt="Адрес на карте">
-            <!-- Форма обратной связи -->
+            <img src="pictures/map.png" alt="Адрес на карте">
+            
             <span class="modal-close-button">X</span>            
         </section>
     </body>

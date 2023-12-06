@@ -1,0 +1,20 @@
+.hidden{
+    display: none;    
+}
+
+.navigation-catalog{
+    display: none;
+}
+
+.visually-hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1;
+    height: 1;
+    margin: -1;
+    
+}
+
+.navigation-catalog_button:hover .navigation-catalog{
+    display: block;
+}
