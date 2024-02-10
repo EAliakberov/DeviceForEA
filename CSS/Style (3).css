@@ -1,0 +1,104 @@
+.main-search, .header-right{
+    display: flex;
+    margin: 0;
+    padding:0;
+    width: 50%;
+    flex-shrink: 1;
+}
+
+
+.user-navigation{
+    display: flex;
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+    margin-right: auto;
+}
+
+.main-menu-button{
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+
+.main-column{
+    padding: 0;
+    margin: auto;
+    width: 1160px;
+}
+
+.header-first{
+    display: flex;
+}
+
+.main-header-logo{
+    position: absolute;
+    top: 15px;
+    left: calc(50% - 580px + 57px);
+    vertical-align: middle;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 48px;
+    letter-spacing: 1px;
+    line-height: 48px;
+
+    font-family: "gilroy";
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+.main-header a{
+    color: black;
+}
+
+.promotion p{
+    font-family: opensans, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.hidden{
+    display: none;    
+}
+
+.navigation-catalog{
+    display: none;
+}
+
+.visually-hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1;
+    height: 1;
+    margin: -1;    
+}
+
+
+
+.main-footer{
+    display: flex;
+    background-color: #464646;
+    color: white;
+}
+
+.main-footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-footer .small-button{
+    color: white;
+}
+
+
+.main-footer a{
+    color: white;
+}
+
