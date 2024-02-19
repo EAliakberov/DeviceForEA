@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="CSS/Style.css">
     </head>
     <body>
-        <div class="pdf visually-hidden"></div>
+        
+        <div class="pdf"></div>
         <div class="main-column">
             <header class="main-header">
                 <a href="index.html" class="main-header-logo">
@@ -18,8 +19,9 @@
                 <div class="container">                    
                     <form action="#" method="get" class="main-search left-column">
                         <label for="main-search" ></label>
-                        <input type="text" id="main-search" name="main-search" placeholder="поиск по сайту">
+                        <input type="text" id="main-search" name="main-search" placeholder="Поиск по сайту">
                         <input type="submit" id="search-submit" name="search-submit" value="Найти">
+                        <div class="search--underline"></div>
                     </form>                    
                     <div class="right-column">
                         <ul class="user-navigation">
@@ -30,10 +32,10 @@
                     </div>
                 </div>
 
-                <nav class="main-navigation">        
-                    <div class="left-column">
-                        <div class="main-nav__button-catalog">
-                            <a href="#" class="main-nav__button ">Каталог товаров</a>                            
+                <nav class="main-navigation">                     
+                    <ul class="main-navigation--list">
+                        <li  class="main-nav__button">
+                            <a href="#">Каталог товаров</a>                            
                             <ul class="main-nav__sub-menu">
                                 <li><a href="#">Виртуальная реальность</a></li>
                                 <li><a href="#">Монопады для селфи</a></li>
@@ -42,112 +44,120 @@
                                 <li><a href="#">Умные часы</a></li>
                                 <li><a href="#">Квадрокоптеры</a></li>                       
                             </ul>   
-                        </div>                                  
-                    </div>
-                    <div class="right-column">
-                        <a href="#" class="main-nav__button">Доставка</a>
-                        <a href="#" class="main-nav__button">Гарантия</a>
-                        <a href="#" class="main-nav__button">Контакты</a>      
-                    </div>          
+                        </li>                     
+                    
+                        <li  class="main-nav__button">
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li  class="main-nav__button">
+                            <a href="#">Гарантия</a>
+                        </li>
+                        <li  class="main-nav__button">
+                            <a href="#">Контакты</a>
+                        </li>  
+                    </ul>                              
                 </nav>
                 
             </header>
             <main>
-                <section class="promotion">
-                    <h2 class="visually-hidden">Реклама 1 товара</h2>
-                    
-                    <div class="left-column">
-                        <img src="pictures/slider-1.png" alt="Селфи-палка">
-                    </div>
-
-                    <div class="right-column">
-                        <b>Делай селфи,<br> как Бен Стиллер!</b>
-                        <p>
-                            Самая длинная палка для селфи доступна в нашем магазине.<br>
-                            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                        </p>
-                        <div class="slider-container">
-                            <a class="line-button" href="#">Подробнее</a>
-                                <ul class="slider-buttons">
-                                    <li class="selected"></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
+                <div class="promotion-container">
+                    <input type="radio" id="first-slide" name="main-slider" class="visually-hidden" checked>
+                    <input type="radio" id="second-slide" name="main-slider" class="visually-hidden">
+                    <input type="radio" id="third-slide" name="main-slider" class="visually-hidden">
+                    <section class="promotion">
+                        <h2 class="visually-hidden">Реклама 1 товара</h2>
+                        
+                        <div class="left-column">
+                            <img src="pictures/slider-1.png" alt="Селфи-палка">
                         </div>
-                        <table class="specifications-table">                    
-                            <tr class="specifications-table-values">
-                                <td>8.5</td>
-                                <td>5</td>
-                                <td>Карбон</td>
-                            </tr>
-                            <tr class="specifications-table-parameters">
-                                <th>Длина палки</th>
-                                <th>Вес палки</th>
-                                <th>Материал</th>
-                            </tr>
-                        </table>
-                    </div>
-                </section>
-                <section class="promotion hidden">
-                    <h2 class="visually-hidden">Реклама 2 товара</h2>
-                    <div class="left-column">
-                        <img src="pictures/slider-2.png" alt="Фитнесс-браслет">
-                    </div>
-                    <div class="right-column">
-                        <b>Худеем<br>правильно!</b>
-                        <p>
-                            Мотивирующие фитнес-браслеты помогут найти в себе силы 
-                            не пропускать занятия и соблюдать диету.
-                        </p>
-                        <a class="line-button" href="#">Подробнее</a>
-                        <ul class="slider-buttons">
-                            <li class="slider-buttons-empty"></li>
-                            <li class="slider-buttons-filled"></li>
-                            <li class="slider-buttons-empty"></li>
-                        </ul>
-                        <table class="specifications-table">                    
-                            <tr class="specifications-table-values">
-                                <td>48 часов</td>
-                                
-                            </tr>
-                            <tr class="specifications-table-parameters">
-                                <th>Без подзарядки</th>
-                            </tr>
-                        </table>
-                    </div>
-                </section>
 
-                <section class="promotion  hidden">
-                    <h2 class="visually-hidden">Реклама 3 товара</h2>
-                    <div class="left-column">
-                        <img src="pictures/slider-3.png" alt="Квадрокоптер">
-                    </div>
+                        <div class="right-column">
+                            <b>Делай селфи,<br> как Бен Стиллер!</b>
+                            <p>
+                                Самая длинная палка для селфи доступна в нашем магазине.<br>
+                                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                            </p>
+                            <div class="slider-container">
+                                <a class="line-button" href="#">Подробнее</a>
+                            </div>
+                            <table class="specifications-table">                    
+                                <tr class="specifications-table-values">
+                                    <td>8.5</td>
+                                    <td>5</td>
+                                    <td>Карбон</td>
+                                </tr>
+                                <tr class="specifications-table-parameters">
+                                    <th>Длина палки</th>
+                                    <th>Вес палки</th>
+                                    <th>Материал</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
                 
-                    <div class="right-column">
-                        <b>Порхает как бабочка,<br>жалит как пчела!</b>
-                        <p>
-                            Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
-                            мощным лазером, замаскированным под стандартную камеру.
-                        </p>
-                        <a class="line-button" href="#">Подробнее</a>
-                        <ul class="slider-buttons">
-                            <li class="slider-buttons-filled"></li>
-                            <li class="slider-buttons-empty"></li>
-                            <li class="slider-buttons-empty"></li>
-                        </ul>
-                        <table class="specifications-table">
-                            <tr class="specifications-table-values">
-                                <td>800 м</td>
-                                <td>50 м</td>
-                            </tr>
-                            <tr class="specifications-table-parameters">
-                                <th>Дальность полета</th>
-                                <th>Радиус поражения</th>
-                            </tr>
-                        </table>
-                    </div>
-                </section>
+                    <section class="promotion">
+                        <h2 class="visually-hidden">Реклама 2 товара</h2>
+                        <div class="left-column">
+                            <img src="pictures/slider-2.png" alt="Фитнесс-браслет">
+                        </div>
+                        <div class="right-column">
+                            <b>Худеем<br>правильно!</b>
+                            <p>
+                                Мотивирующие фитнес-браслеты помогут найти в себе силы 
+                                не пропускать занятия и соблюдать диету.
+                            </p>
+                            <a class="line-button" href="#">Подробнее</a>
+                            
+                            <table class="specifications-table">                    
+                                <tr class="specifications-table-values">
+                                    <td>48 часов</td>
+                                    
+                                </tr>
+                                <tr class="specifications-table-parameters">
+                                    <th>Без подзарядки</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
 
+                    <section class="promotion">
+                        <h2 class="visually-hidden">Реклама 3 товара</h2>
+                        <div class="left-column">
+                            <img src="pictures/slider-3.png" alt="Квадрокоптер">
+                        </div>
+                    
+                        <div class="right-column">
+                            <b>Порхает как бабочка,<br>жалит как пчела!</b>
+                            <p>
+                                Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+                                мощным лазером, замаскированным под стандартную камеру.
+                            </p>
+                            <a class="line-button" href="#">Подробнее</a>
+                           
+                            <table class="specifications-table">
+                                <tr class="specifications-table-values">
+                                    <td>800 м</td>
+                                    <td>50 м</td>
+                                </tr>
+                                <tr class="specifications-table-parameters">
+                                    <th>Дальность полета</th>
+                                    <th>Радиус поражения</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+                    <ul class="slider-buttons">
+                        <li class="slider-buttons-filled">
+                            <label for="first-slide">
+                        </li>
+                        <li class="slider-buttons-empty">
+                            <label for="second-slide">
+                        </li>
+                        <li class="slider-buttons-empty">
+                            <label for="third-slide">
+                        </li>
+                    </ul>
+                 </div>
 
                 <section class="categories">
                     <h2 class="visually-hidden">Категории товаров</h2>
@@ -166,8 +176,8 @@
             <section class="services">
                 <h2 class="visually-hidden">Сервисы</h2>
                 <div class="container"> 
-                    <input type="radio" class="visually-hidden" name="services-radio" id="services-delivery" checked>  
-                    <input type="radio" class="visually-hidden" name="services-radio" id="services-warranty"> 
+                    <input type="radio" class="visually-hidden" name="services-radio" id="services-delivery" >  
+                    <input type="radio" class="visually-hidden" name="services-radio" id="services-warranty" checked> 
                     <input type="radio" class="visually-hidden" name="services-radio" id="services-credit">                
                     <ul class="services-list">
                         <li>                                
@@ -276,7 +286,7 @@
             </div>
         </footer>
 
-        <section class="modal modal-write-us">
+        <section class="modal modal--write-us">
             <h2>Форма обратной связи</h2>
             <form action="https://echo.htmlacademy.ru" method="post" class="write-us">
                 <label>
@@ -296,11 +306,13 @@
             <span class="modal-close-button">X</span>            
         </section>
 
-        <section class="modal modal-map">
-            <h2>Модальное окно с картой</h2>
-            <img src="pictures/map.png" alt="Адрес на карте">
+        <section class="modal modal--map">
+            <h2 class="visually-hidden">Модальное окно с картой</h2>
+            <img src="pictures/map-big.png" alt="Адрес на карте">
             
             <span class="modal-close-button">X</span>            
         </section>
+        <div class="overlay"></div>
+        <script src="JS/script.js"></script>
     </body>
 </html>
